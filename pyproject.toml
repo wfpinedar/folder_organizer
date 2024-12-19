@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "folder-organizer"  # Nombre del paquete, asegúrate que esté disponible en PyPI
+version = "0.1.0"
+description = "Organiza carpetas de descargas por tipo de archivo"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name="Tu Nombre", email="wfpinedar@gmail.com" }
+]
+dependencies = [
+  "tqdm"
+]
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/wfpinedar/folder-organizer"
+
+[project.scripts]
+folder-organizer = "folder_organizer.organizer:main"
